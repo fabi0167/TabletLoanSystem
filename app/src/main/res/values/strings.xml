@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TabletLoanSystem</string>
+    <string name="start_date_hint">Start Date (YYYY-MM-DD)</string>
+    <string name="end_date_hint">End Date (YYYY-MM-DD)</string>
+
+</resources>

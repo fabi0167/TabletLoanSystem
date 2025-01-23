@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tablet Brand Filter -->
+    <!-- Tablet Brand Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a Tablet"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerTabletBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Cable Type Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a Cable"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerCableType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <!-- Start Date Picker -->
+    <EditText
+        android:id="@+id/editTextStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/start_date_hint"
+        android:focusable="false"
+        android:clickable="true"
+        android:drawableLeft="@android:drawable/ic_menu_today"
+        android:padding="10dp"/>
+
+    <!-- End Date Picker -->
+    <EditText
+        android:id="@+id/editTextEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/end_date_hint"
+        android:focusable="false"
+        android:clickable="true"
+        android:drawableLeft="@android:drawable/ic_menu_today"
+        android:padding="10dp"/>
+
+    <!-- Clear Filters Button -->
+    <Button
+        android:id="@+id/buttonClearFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Filters"
+        android:layout_marginBottom="5dp"/>
+
+    <!-- Filter Button -->
+    <Button
+        android:id="@+id/buttonFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Loan List -->
+    <ListView
+        android:id="@+id/listViewLoans"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+    <!-- Return Button -->
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return Selected Loan"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextBorrowerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Borrower Name" />
+
+    <EditText
+        android:id="@+id/editTextContactInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Info" />
+
+    <!-- Tablet Brand Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a Tablet"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerTabletBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Cable Type Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a Cable"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerCableType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/buttonRegisterLoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Loan" />
+
+</LinearLayout>
